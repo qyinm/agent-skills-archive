@@ -13,6 +13,7 @@ Each skill is a folder with a `SKILL.md` file, and may include optional `scripts
 
 ## Current Skills
 
+- [`career-management`](./career-management/)
 - [`git-commit-helper`](./git-commit-helper/)
 - [`log-work`](./log-work/)
 - [`worklog-context`](./worklog-context/)
