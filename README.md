@@ -15,6 +15,7 @@ Each skill is a folder with a `SKILL.md` file, and may include optional `scripts
 
 - [`career-management`](./career-management/)
 - [`git-commit-helper`](./git-commit-helper/)
+- [`ios-testflight-release`](./ios-testflight-release/)
 - [`log-work`](./log-work/)
 - [`worklog-context`](./worklog-context/)
 - [`rubberduck-learning`](./rubberduck-learning/)
