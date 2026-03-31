@@ -24,6 +24,7 @@ npx skills add qyinm/agent-skills-archive -g
 | Skill | Description |
 |-------|-------------|
 | [career-management](skills/career-management/) | Resume versioning, job application pipeline, interview prep |
+| [experiment-loop](skills/experiment-loop/) | General-purpose optimization loop for latency, runtime, memory, bundle size, and other measurable metrics |
 | [git-commit-helper](skills/git-commit-helper/) | Conventional commit message guidance |
 | [ios-testflight-release](skills/ios-testflight-release/) | iOS app archive → TestFlight upload via xcodebuild |
 | [log-work](skills/log-work/) | Auto-log development work into date-based changelog files |
