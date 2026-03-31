@@ -1,46 +1,50 @@
 # Agent Skills Archive
 
-Model-agnostic skill archive for reusable agent workflows.
+Reusable agent skills for AI coding assistants. Compatible with Claude Code,
+Codex, Cursor, OpenCode, and 40+ agents via [skills.sh](https://skills.sh).
 
-This repository stores filesystem-based skills that can be reused across coding assistants.
-Each skill is a folder with a `SKILL.md` file, and may include optional `scripts/`, `references/`, and `assets/`.
+## Quick Install
 
-## Repository Goal
+```bash
+# Install all skills
+npx skills add qyinm/agent-skills-archive
 
-- Keep skills portable across tools (Codex, Claude Code, and others)
-- Keep `SKILL.md` frontmatter minimal: `name`, `description`
-- Keep instructions focused, actionable, and easy to maintain
+# Preview available skills
+npx skills add qyinm/agent-skills-archive --list
 
-## Current Skills
+# Install specific skill
+npx skills add qyinm/agent-skills-archive --skill career-management
 
-- [`career-management`](./career-management/)
-- [`git-commit-helper`](./git-commit-helper/)
-- [`ios-testflight-release`](./ios-testflight-release/)
-- [`log-work`](./log-work/)
-- [`worklog-context`](./worklog-context/)
-- [`rubberduck-learning`](./rubberduck-learning/)
+# Global install (all projects)
+npx skills add qyinm/agent-skills-archive -g
+```
+
+## Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| [career-management](skills/career-management/) | Resume versioning, job application pipeline, interview prep |
+| [git-commit-helper](skills/git-commit-helper/) | Conventional commit message guidance |
+| [ios-testflight-release](skills/ios-testflight-release/) | iOS app archive → TestFlight upload via xcodebuild |
+| [log-work](skills/log-work/) | Auto-log development work into date-based changelog files |
+| [rubberduck-learning](skills/rubberduck-learning/) | Learning-first debugging with Socratic questioning |
+| [worklog-context](skills/worklog-context/) | Auto-search past worklogs for task context |
+| [agent-skill-creator](skills/agent-skill-creator/) | Generate new agent skills |
 
 ## Skill Structure
 
-```text
-<skill-name>/
-├── SKILL.md
-├── scripts/        (optional)
-├── references/     (optional)
-└── assets/         (optional)
 ```
-
-## Usage Notes
-
-- Use explicit invocation when available (for example, `$rubberduck-learning`)
-- Also rely on implicit invocation via clear `description` triggers
-- Keep vendor-specific metadata separate and optional
+skills/
+├── <skill-name>/
+│   ├── SKILL.md          # Required: instructions + frontmatter
+│   ├── EXAMPLES.md       # Optional: usage examples
+│   ├── SCENARIOS.md      # Optional: detailed scenarios
+│   ├── scripts/          # Optional: helper scripts
+│   ├── references/       # Optional: reference docs
+│   └── assets/           # Optional: images, templates
+```
 
 ## Naming Convention
 
-- lowercase letters, numbers, hyphens only
-- short, descriptive, action-oriented names
-
-## License
-
-Add a license file if you plan to share this repository publicly.
+- lowercase, hyphens only (`career-management`)
+- short, descriptive, action-oriented
